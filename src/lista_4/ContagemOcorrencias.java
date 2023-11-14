@@ -1,3 +1,5 @@
+package lista_4;
+
 import java.util.Locale;
 import java.util.Scanner;
 
