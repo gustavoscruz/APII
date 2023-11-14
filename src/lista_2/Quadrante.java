@@ -13,16 +13,16 @@ public class Quadrante {
         y = input.nextFloat();
 
         if(x > 0 && y > 0){
-            System.out.print("The point is in the first quadrant");
+            System.out.print("The point is in the first quadrant!");
         }
         else if (x < 0 && y > 0){
-            System.out.print("The point is in the second quadrant");
+            System.out.print("The point is in the second quadrant!");
         }
         else if (x < 0 && y < 0){
-            System.out.print("The point is in the third quadrant");
+            System.out.print("The point is in the third quadrant!");
         }
         else if (x > 0 && y < 0){
-            System.out.print("The point is in the fourth quadrant");
+            System.out.print("The point is in the fourth quadrant!");
         }
         else{
             System.out.print("The point is on one of the axes");
