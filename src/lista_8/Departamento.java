@@ -10,6 +10,18 @@ public class Departamento {
     private String telefone;
     private ArrayList<Professor> professor = new ArrayList<Professor>();
 
+
+    public Departamento(String name, String numero, String email, String telefone){
+        this.name = name;
+        this.numero = numero;
+        this.email = email;
+        this.telefone = telefone;
+    }
+
+    public Departamento(){
+
+    }
+
     public String getName() {
         return name;
     }
