@@ -61,4 +61,8 @@ public class Departamento {
     public void removeProfessor(Professor professor1){
         professor.remove(professor1);
     }
+
+    public int quantidadeProfessores(){
+        return professor.size();
+    }
 }
