@@ -54,8 +54,13 @@ public class Departamento {
         this.telefone = telefone;
     }
 
-    public void addProfessor(Professor professor1){
-        professor.add(professor1);
+    public boolean addProfessor(Professor professor1){
+        if(consultarProfessor(professor1.getCpf()) == null){
+            professor.add(professor1);
+            return true;
+        }
+        else
+            return false;
     }
 
     public void removeProfessor(Professor professor1){
@@ -64,5 +69,12 @@ public class Departamento {
 
     public int quantidadeProfessores(){
         return professor.size();
+    }
+
+    public Professor consultarProfessor(String cpf){
+        for(Professor p : professor)
+            if(p.getCpf().equals(cpf))
+                return p;
+        return null;
     }
 }

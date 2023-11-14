@@ -1,6 +1,8 @@
 package lista_8;
 
 public class Professor {
+
+    private String cpf;
     private String nome;
     private String formacao;
     private double salario;
@@ -35,6 +37,9 @@ public class Professor {
         this.salario = salario;
     }
 
+    public String getCpf() {
+        return cpf;
+    }
     public void reajustarSalario(double reajustePercentual){
         this.salario = this.salario * (1 + (reajustePercentual / 100));
     }

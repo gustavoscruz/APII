@@ -23,8 +23,14 @@ public class Universidade {
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
-    public void addDepartamento(Departamento departament){
-        departamento.add(departament);
+    public boolean addDepartamento(Departamento departament){
+        if(consultarDepartamento(departament.getNumero()) == null){
+            departamento.add(departament);
+            return true;
+        }
+        else
+            return false;
+
     }
 
     public void removeDepartamento(Departamento departament){
@@ -33,5 +39,12 @@ public class Universidade {
 
     public int quantidadeDepartamentos(){
         return departamento.size();
+    }
+
+    public Departamento consultarDepartamento(String numero){
+        for(Departamento d : departamento)
+            if(d.getNumero().equals(numero))
+                return d;
+        return null;
     }
 }
