@@ -7,7 +7,8 @@ public class Professor {
     private String formacao;
     private double salario;
 
-    public Professor(String nome, String formacao, double salario) {
+    public Professor(String cpf, String nome, String formacao, double salario) {
+        this.cpf = cpf;
         this.nome = nome;
         this.formacao = formacao;
         this.salario = salario;
