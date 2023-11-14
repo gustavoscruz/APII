@@ -1,3 +1,7 @@
+package lista_7;
+
+import lista_7.Arrays;
+
 import java.util.Scanner;
 
 public class MultiMatriz {

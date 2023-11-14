@@ -1,3 +1,5 @@
+package lista_7;
+
 public class Arrays {
     public static double biggestElement(double[] array){
         double biggest = array[0];
