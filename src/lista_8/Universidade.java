@@ -30,4 +30,8 @@ public class Universidade {
     public void removeDepartamento(Departamento departament){
         departamento.remove(departament);
     }
+
+    public int quantidadeDepartamentos(){
+        return departamento.size();
+    }
 }
