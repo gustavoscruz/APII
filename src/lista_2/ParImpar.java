@@ -1,3 +1,5 @@
+package lista_2;
+
 import java.util.Scanner;
 public class ParImpar {
     public static void main(String[] args){

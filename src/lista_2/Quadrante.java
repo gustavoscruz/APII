@@ -1,3 +1,5 @@
+package lista_2;
+
 import java.util.Scanner;
 public class Quadrante {
     public static void main(String[] args){
