@@ -1,17 +1,21 @@
+import lista_7.Arrays;
+import lista_8.*;
 import java.util.Scanner;
 
 public class App {
     public static void main(String[] args){
-       Scanner input = new Scanner(System.in);
 
-       int[][] matrix = new int[3][3];
-       for (int i = 0; i < matrix.length; i++){
-           for (int b = 0; b < matrix.length; b++){
-               System.out.print("Matrix[" + i + "][" + b + "]: ");
-               matrix[i][b] = input.nextInt();
-           }
-       }
-       System.out.println(Arrays.isMagicMatrix(matrix));
+        Jogador gustavo = new Jogador("09197124524", "Gustavo", 100);
+        Jogador vinicius = new Jogador("09197124520", "Vinicius", 100);
+
+        Time flamengo = new Time();
+
+        flamengo.contrataJogador(gustavo);
+        flamengo.contrataJogador(vinicius);
+        System.out.println(flamengo.quantidadeJogadores());
+        flamengo.demitiJogador(vinicius);
+        System.out.println(flamengo.quantidadeJogadores());
+        System.out.println(flamengo.consultaJogador("09197124520"));
     }
 }
 
