@@ -11,6 +11,10 @@ public class Pneus {
         this.fabricante = fabricante;
     }
 
+    public Pneus(){
+
+    }
+
     public double getPreco() {
         return preco;
     }
