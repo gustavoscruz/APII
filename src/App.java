@@ -4,17 +4,26 @@ import lista_8.*;
 public class App {
     public static void main(String[] args){
 
-        Musica digaSimPraMim = new Musica("Diga sim pra mim", "desejo de menina", 3, "099");
-        Musica rapsodia = new Musica();
-        Playlist forro = new Playlist("Forro");
+        Pais brazil = new Pais("Brasil", 20000, 200000000);
+        Pais argentina = new Pais("Argentina", 10000, 30000000);
+        Pais equador = new Pais("Equador", 5000, 15000000);
+        Pais peru = new Pais("Peru", 1500, 200000);
+        Pais colombia = new Pais("colombia", 2000, 10000000);
+        Continente americaDoSul = new Continente("America do Sul");
 
-        rapsodia.setIsrc("019");
-
-        forro.adicionarMusica(digaSimPraMim);
-        forro.adicionarMusica(rapsodia);
-        System.out.println(forro.listarMusicas());
-        forro.removerMusica(rapsodia);
-        System.out.println(forro.quantidadeDeMusicas());
+        americaDoSul.adicionarPais(brazil);
+        americaDoSul.adicionarPais(argentina);
+        americaDoSul.adicionarPais(equador);
+        americaDoSul.adicionarPais(peru);
+        System.out.println(americaDoSul.paisMaispopuloso());
+        System.out.println(americaDoSul.paisMenosPopuloso());
+        System.out.println(americaDoSul.densidadePopulacional());
+        System.out.println(americaDoSul.dimensaoDoContinente());
+        System.out.println(americaDoSul.populacaoDoContinente());
+        americaDoSul.adicionarPais(colombia);
+        System.out.println(americaDoSul.densidadePopulacional());
+        System.out.println(americaDoSul.dimensaoDoContinente());
+        System.out.println(americaDoSul.populacaoDoContinente());
     }
 }
 
