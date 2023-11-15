@@ -13,6 +13,8 @@ public class App {
         forro.adicionarMusica(digaSimPraMim);
         forro.adicionarMusica(rapsodia);
         System.out.println(forro.listarMusicas());
+        forro.removerMusica(rapsodia);
+        System.out.println(forro.quantidadeDeMusicas());
     }
 }
 
