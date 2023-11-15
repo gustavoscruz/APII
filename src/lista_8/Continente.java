@@ -55,7 +55,7 @@ public class Continente {
     public Pais paisMaispopuloso(){
         Pais maior = paises.get(0);
         for(Pais p : paises){
-            if(maior.getPopulacao() > p.getPopulacao()){
+            if(maior.getPopulacao() < p.getPopulacao()){
                 maior = p;
             }
         }
@@ -65,7 +65,7 @@ public class Continente {
     public Pais paisMenosPopuloso(){
         Pais menor = paises.get(0);
         for(Pais p : paises){
-            if(menor.getPopulacao() < p.getPopulacao()){
+            if(menor.getPopulacao() > p.getPopulacao()){
                 menor = p;
             }
         }
