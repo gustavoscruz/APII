@@ -44,6 +44,10 @@ public class Musica {
         return isrc;
     }
 
+    public void setIsrc(String isrc){
+        this.isrc = isrc;
+    }
+
     public float controlarVelocidadeDeReproducao(float velocidade){
         return this.duracao / velocidade;
     }
