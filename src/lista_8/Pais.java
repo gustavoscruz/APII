@@ -5,6 +5,15 @@ public class Pais {
     private double area;
     private long populacao;
 
+
+    public Pais(String nome, double area, long populacao){
+        this.nome = nome;
+        this.area = area;
+        this.populacao = populacao;
+    }
+    public Pais(){
+
+    }
     public String getNome(){
         return nome;
     }
@@ -27,5 +36,14 @@ public class Pais {
 
     public void setPopulacao(long populacao){
         this.populacao = populacao;
+    }
+
+    @Override
+    public String toString() {
+        return "Pais{" +
+                "nome='" + nome + '\'' +
+                ", area=" + area +
+                ", populacao=" + populacao +
+                '}';
     }
 }
