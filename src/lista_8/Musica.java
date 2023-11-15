@@ -6,6 +6,17 @@ public class Musica {
     private int duracao;
     private String isrc;
 
+    public Musica(String titulo, String artista, int duracao, String isrc){
+        this.titulo = titulo;
+        this.artista = artista;
+        this.duracao = duracao;
+        this.isrc = isrc;
+    }
+
+    public Musica(){
+
+    }
+
     public String getTitulo(){
         return titulo;
     }
