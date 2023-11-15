@@ -13,6 +13,14 @@ public class Playlist {
 
     }
 
+    public String getNome(){
+        return nome;
+    }
+
+    public void SetNome(String nome){
+        this.nome = nome;
+    }
+
     public String reproduzirMusica(Musica musica){
         if(consultarMusica(musica.getIsrc()) == null) {
             return "A musica " + musica.getTitulo() + " não está na playlista";
@@ -54,8 +62,13 @@ public class Playlist {
 
     public String listarMusicas(){
         for(Musica m : musicas){
-            return m.getIsrc();
+            System.out.println(m.getIsrc());
         }
+        return "ok";
+    }
+
+    public int quantidadeDeMusicas(){
+        return musicas.size();
     }
 
 }
